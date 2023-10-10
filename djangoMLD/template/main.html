@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>This is Django ML model</title>
+</head>
+<body>
+    <h1>Django ML model</h1>
+    <hr>
+    <form action="result" method="post">
+        {% csrf_token %}
+        Enter sepal length: <input type="number" name="sepallength" required><br> 
+        Enter sepal width: <input type="number" name="sepalwidth" required><br> 
+        Enter petal length: <input type="number" name="petallength" required><br> 
+        Enter petal width: <input type="number" name="petalwidth" required><br> 
+        <input type="submit">
+    </form>
+</body>
+</html>
